@@ -4,7 +4,9 @@
 #define WINDOW_WIDTH 640
 #define WINDOW_HEIGHT 480
 
-void display(){}
+void display(){
+    glutSwapBuffers();
+}
 
 int main(int argc, char** argv){
     glutInit(&argc, argv);
