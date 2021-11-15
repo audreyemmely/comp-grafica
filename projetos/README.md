@@ -18,7 +18,7 @@ Usando o terminal, vá até o caminho onde a pasta está localizada em sua máqu
 
 Após acessar a pasta "comp-grafica/projetos" no terminal, você terá acesso aos arquivos dos projetos.
 
-Para executar o projeto Ola, utilize o seguinte comando: 
+Para executar o **projeto Ola**, utilize o seguinte comando: 
 ```
 gcc projetoOla.c -o ola.out -lglut -lGL
 ./ola.out
