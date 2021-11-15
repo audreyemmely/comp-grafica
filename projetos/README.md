@@ -23,3 +23,4 @@ Para executar o projeto Ola, utilize o seguinte comando:
 gcc projetoOla.c -o ola.out -lglut -lGL
 ./ola.out
 ```
+É possível visualizar o efeito "ola" utilizando as letras 'q' 'w' 'e' 'r' 't' 'y' 'u' 'i' 'o' 'p' do teclado.
