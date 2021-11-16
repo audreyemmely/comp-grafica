@@ -55,7 +55,8 @@ void displayQuads()
     glFlush();
 }
 
-void keyboard(unsigned char letter, int x, int y) // é possível visualizar o efeito "ola" utilizando as letras 'q' 'w' 'e' 'r' 't' 'y' 'u' 'i' 'o' 'p' do teclado
+// é possível visualizar o efeito "ola" utilizando as letras 'q' 'w' 'e' 'r' 't' 'y' 'u' 'i' 'o' 'p' do teclado
+void keyboard(unsigned char letter, int x, int y) 
 {  
     switch (letter) {
         case 't':
