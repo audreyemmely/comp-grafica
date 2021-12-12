@@ -18,9 +18,18 @@ Usando o terminal, vá até o caminho onde a pasta está localizada em sua máqu
 
 Após acessar a pasta "comp-grafica/projetos" no terminal, você terá acesso aos arquivos dos projetos.
 
+## Projeto Ola
 Para executar o **projeto Ola**, utilize o seguinte comando: 
 ```
 gcc projetoOla.c -o ola.out -lglut -lGL
 ./ola.out
 ```
 É possível visualizar o efeito "ola" utilizando as letras 'q' 'w' 'e' 'r' 't' 'y' 'u' 'i' 'o' 'p' do teclado.
+
+## Projeto Casa 3D
+Para executar o **projeto Casa 3D**, utilize o seguinte comando: 
+```
+gcc casa3d.c -o casa3d.out -lglut -lGL
+./casa3d.out
+```
+É possível visualizar a rotação em 360° utilizando a tecla 'R' do teclado.
