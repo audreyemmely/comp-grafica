@@ -32,4 +32,12 @@ Para executar o **projeto Casa 3D**, utilize o seguinte comando:
 gcc casa3d.c -o casa3d.out -lglut -lGL
 ./casa3d.out
 ```
-É possível visualizar a rotação em 360° utilizando a tecla 'R' do teclado.
+É possível visualizar a rotação em 360° utilizando a tecla 'r' do teclado.
+
+## Projeto Catavento
+Para executar o **projeto cataveno**, utilize o seguinte comando: 
+```
+gcc flor2catavento.c -o catavento.out -lglut -lGL -lGLU
+./catavento.out
+```
+É possível rotacionar para a direita utilizando a tecla 'd' do teclado, e rotacionar para a esquerda utilizando a tecla 'e' do teclado.
