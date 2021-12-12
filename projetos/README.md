@@ -42,4 +42,4 @@ gcc flor2catavento.c -o catavento.out -lglut -lGL -lGLU
 ```
 É possível rotacionar para a direita utilizando a tecla 'd' do teclado utilizando a velocidade normal, para aumentar a velocidade utilizar a tecla 'f', para diminuir a velocidade utilizar a tecla 'g'. 
 
-É possível rotacionar para a esquerda utilizando a tecla 'e' do teclado, para aumentar a velocidade utilizar a tecla 'r', para diminuir a velocidade utilizar a tecla 't'. 
+É possível rotacionar para a esquerda utilizando a tecla 'e' do teclado utilizando a velocidade normal, para aumentar a velocidade utilizar a tecla 'r', para diminuir a velocidade utilizar a tecla 't'. 
