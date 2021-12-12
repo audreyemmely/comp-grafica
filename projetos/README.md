@@ -35,7 +35,7 @@ gcc casa3d.c -o casa3d.out -lglut -lGL
 É possível visualizar a rotação em 360° utilizando a tecla 'r' do teclado.
 
 ## Projeto Catavento
-Para executar o **projeto catavento**, utilize o seguinte comando: 
+Para executar o **projeto Catavento**, utilize o seguinte comando: 
 ```
 gcc flor2catavento.c -o catavento.out -lglut -lGL -lGLU
 ./catavento.out
