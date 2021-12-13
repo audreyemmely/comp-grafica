@@ -53,7 +53,7 @@ void keyboard(unsigned char key, int x, int y) {
 	int anguloDireito = 15;
 	int anguloEsquerdo = -15;
 	
-    switch (key){
+    	switch (key){
         case 'd': 
        	    glTranslatef(250, 250, 0);
 	    glRotatef(anguloDireito, 0.0, 0.0, 1.0);
