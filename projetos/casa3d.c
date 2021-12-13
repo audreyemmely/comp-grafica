@@ -72,7 +72,7 @@ void display()
     glutSwapBuffers();
 }
 
-// Pressionar tecla R para poder rotacionar a casa em 360 graus
+// Pressionar tecla r para poder rotacionar a casa em 360 graus
 void keyboard(unsigned char key, int x, int y) {
     if (key == 'r') 
     {
