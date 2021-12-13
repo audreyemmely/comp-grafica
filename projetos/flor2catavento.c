@@ -48,7 +48,9 @@ void catavento()
 	
 }
 
-// pressionar 'd' para rotacionar para a direita, pressionar 'e' para rotacionar para esquerda 
+// pressionar 'd' para rotacionar para a direita, pressionar 'e' para rotacionar para esquerda
+// pressionar 'f' para rotacionar mais rápido à direita, pressionar 'g' para rotacionar mais lento à direita
+// pressionar 'r' para rotacionar mais rápido à esquerda, pressionar 't' para rotacionar mais lento à esquerda
 void keyboard(unsigned char key, int x, int y) {
 	int anguloDireito = 15;
 	int anguloEsquerdo = -15;
