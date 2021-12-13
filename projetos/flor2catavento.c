@@ -56,53 +56,53 @@ void keyboard(unsigned char key, int x, int y) {
     switch (key){
         case 'd': 
        	    glTranslatef(250, 250, 0);
-	        glRotatef(anguloDireito, 0.0, 0.0, 1.0);
-	        glTranslatef(-250, -250, 0);
-
+	    glRotatef(anguloDireito, 0.0, 0.0, 1.0);
+	    glTranslatef(-250, -250, 0);
+		    
     	    glPopMatrix();
             break;
 
-		case 'f':
+	case 'f':
        	    glTranslatef(250, 250, 0);
-	        glRotatef(anguloDireito*2, 0.0, 0.0, 1.0);
-	        glTranslatef(-250, -250, 0);
+	    glRotatef(anguloDireito*2, 0.0, 0.0, 1.0);
+	    glTranslatef(-250, -250, 0);
 
     	    glPopMatrix();
             break;
 		
-		case 'g':
+	case 'g':
        	    glTranslatef(250, 250, 0);
-	        glRotatef(anguloDireito/2, 0.0, 0.0, 1.0);
-	        glTranslatef(-250, -250, 0);
+	    glRotatef(anguloDireito/2, 0.0, 0.0, 1.0);
+	    glTranslatef(-250, -250, 0);
 
     	    glPopMatrix();
             break;
 
-		case 'e':
+	case 'e':
             glTranslatef(250, 250, 0);
-	        glRotatef(anguloEsquerdo, 0.0, 0.0, 1.0);
-	        glTranslatef(-250, -250, 0);
+	    glRotatef(anguloEsquerdo, 0.0, 0.0, 1.0);
+	    glTranslatef(-250, -250, 0);
 
     	    glPopMatrix();
             break;
 		
-		case 'r':
+	case 'r':
        	    glTranslatef(250, 250, 0);
-	        glRotatef(anguloEsquerdo*2, 0.0, 0.0, 1.0);
-	        glTranslatef(-250, -250, 0);
+	    glRotatef(anguloEsquerdo*2, 0.0, 0.0, 1.0);
+	    glTranslatef(-250, -250, 0);
 
     	    glPopMatrix();
             break;
 
-		case 't':
+	case 't':
        	    glTranslatef(250, 250, 0);
-	        glRotatef(anguloEsquerdo/2, 0.0, 0.0, 1.0);
-	        glTranslatef(-250, -250, 0);
+	    glRotatef(anguloEsquerdo/2, 0.0, 0.0, 1.0);
+	    glTranslatef(-250, -250, 0);
 
     	    glPopMatrix();
             break;
 
-		case 27:
+	case 27:
             exit(0);
             break;	
     }
@@ -145,7 +145,7 @@ int main(int argc, char** argv)
 	init();
 
 	glutDisplayFunc(display);
-    glutKeyboardFunc(keyboard);
+    	glutKeyboardFunc(keyboard);
 
 	glutMainLoop();
 
