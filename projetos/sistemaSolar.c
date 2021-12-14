@@ -16,7 +16,7 @@ void display(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
      
-//  Desenhar o sol
+//  Sol
     glColor3f(1, 1, 0); //Cor amarela
      
     glPushMatrix();
@@ -25,7 +25,7 @@ void display(void)
     glutWireSphere(1, 20, 16); //Desenha o sol
     glPopMatrix();
     
-//  Desenhar a terra
+//  Terra
     glColor3f(0, 0, 1); //Cor azul
      
     glPushMatrix();
@@ -34,7 +34,7 @@ void display(void)
     glutWireSphere(0.2, 10, 8); //Desenha a terra
     glPopMatrix();
 
-//  Desenha a primeira lua
+//  Primeira lua
     glColor3f(1, 1, 1); //Cor branca
      
     glPushMatrix();
@@ -45,17 +45,25 @@ void display(void)
     glutWireSphere(0.05, 8, 6); //Desenha a lua
     glPopMatrix();
 
-//  Desenha a segunda lua
+//  Segunda lua
     glColor3f(0, 1, 0); //Cor verde
      
     glPushMatrix();
-    glRotatef((GLfloat) terra/2, 0, 1, 0); //Rotacionar a lua para que ela gire junto com o planeta
+    glRotatef((GLfloat) (terra/2), 0, 1, 0); //Rotacionar a lua para que ela gire junto com o planeta
     glTranslatef(2, 0, 0); //Transladar a lua para que ela fique junto com o planeta
     glRotatef((GLfloat) luas, 1, 1, 0); //Rotacionar a lua para que ela gire ao redor do eixo x e y da Terra
     glTranslatef(0, 0, 0.5); //Transladar a lua para ficar a 0.5 de distância do centro do planeta
     glutWireSphere(0.05, 8, 6); //Desenha a lua
     glPopMatrix();
 
+//  Mercurio
+    glColor3f(0.0, 1.0, 1.0); //Cor ciano
+     
+    glPushMatrix();
+    glRotatef((GLfloat) planetas, 0, 1, 0.15); //Rotacionar planeta mercurio ao redor do sol
+    glTranslatef(1.2, 0, 0); //Transladar planeta mais perto do sol
+    glutWireSphere(0.05, 12, 10); //Desenha planeta
+    glPopMatrix();
 
     glutSwapBuffers();
 }
@@ -77,6 +85,7 @@ void keyboard(unsigned char key, int x, int y)
         case 'y': // Move o sistema solar
             terra = (terra-10) % 720;
             luas = (luas-10) % 360;
+            planetas = ((planetas+10) % 360);
             glutPostRedisplay();
             break;
              
