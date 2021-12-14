@@ -3,9 +3,7 @@
 GLsizei winWidth = 1000;
 GLsizei winHeight = 700;
  
-static int terra = 0;
-static int planetas = 0;
-static int luas = 0;
+static int mercurio, venus, terra, marte, ceres, luas = 0;
 
 void init(void)
 {
@@ -24,8 +22,26 @@ void display(void)
     glRotatef((GLfloat) terra, 0, 0, 1); //Rotacionar o sol de acordo com o movimento dos planetas
     glutWireSphere(1, 20, 16); //Desenha o sol
     glPopMatrix();
-    
-//  Terra
+
+//  Mercurio (planeta 1)
+    glColor3f(0.0, 1.0, 1.0); //Cor ciano
+     
+    glPushMatrix();
+    glRotatef((GLfloat) mercurio, 0, 1, 0.15); //Rotacionar planeta mercurio ao redor do sol
+    glTranslatef(1.2, 0, 0); //Transladar planeta mais perto do sol
+    glutWireSphere(0.05, 12, 10); //Desenha planeta
+    glPopMatrix();
+
+//  Venus (planeta 2)
+    glColor3f(1.0, 0.5, 0.0); //Cor laranja
+     
+    glPushMatrix();
+    glRotatef((GLfloat) venus, 0, 1, 0.1); //Rotacionar planeta venus ao redor do sol
+    glTranslatef(1.5, -0.3, 0); //Transladar planeta entre mercurio e terra
+    glutWireSphere(0.07, 12, 10); //Desenha planeta
+    glPopMatrix();
+
+//  Terra (planeta 3)
     glColor3f(0, 0, 1); //Cor azul
      
     glPushMatrix();
@@ -56,16 +72,17 @@ void display(void)
     glutWireSphere(0.05, 8, 6); //Desenha a lua
     glPopMatrix();
 
-//  Mercurio
-    glColor3f(0.0, 1.0, 1.0); //Cor ciano
+//  Marte (planeta 4)
+    glColor3f(1, 0, 0); //Cor vermelha
      
     glPushMatrix();
-    glRotatef((GLfloat) planetas, 0, 1, 0.15); //Rotacionar planeta mercurio ao redor do sol
-    glTranslatef(1.2, 0, 0); //Transladar planeta mais perto do sol
-    glutWireSphere(0.05, 12, 10); //Desenha planeta
+    glRotatef((GLfloat) (marte/3), 0, 1, 0); //Rotacionar planeta marte ao redor do sol
+    glTranslatef(-2.5, 0.4, 0); //Transladar planeta para o outro lado do sol entre venus e ceres
+    glutWireSphere(0.1, 10, 8); //Desenha o planeta
     glPopMatrix();
 
     glutSwapBuffers();
+
 }
 
 void reshape(GLint w, GLint h)
@@ -83,10 +100,14 @@ void keyboard(unsigned char key, int x, int y)
 {
     switch (key) {
         case 'y': // Move o sistema solar
+            mercurio = ((mercurio+10) % 360);
+            venus = ((venus+10) % 360);
             terra = (terra-10) % 720;
             luas = (luas-10) % 360;
-            planetas = ((planetas+10) % 360);
+            marte = ((marte-10) % 1080);
+
             glutPostRedisplay();
+
             break;
              
         case 27:
