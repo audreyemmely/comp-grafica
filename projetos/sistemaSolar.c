@@ -81,6 +81,15 @@ void display(void)
     glutWireSphere(0.1, 10, 8); //Desenha o planeta
     glPopMatrix();
 
+// Ceres (planeta-anão 5)
+    glColor3f(1.0, 0.0, 1.0); //Cor rosa
+     
+    glPushMatrix();
+    glRotatef((GLfloat) (ceres/8), 0, 1, 0.35); //Rotacionar planeta ceres ao redor do sol
+    glTranslatef(-3, 0, 0); //Transladar planeta mais longe do sol
+    glutWireSphere(0.05, 5, 5); //Desenha planeta
+    glPopMatrix();
+
     glutSwapBuffers();
 
 }
@@ -105,7 +114,8 @@ void keyboard(unsigned char key, int x, int y)
             terra = (terra-10) % 720;
             luas = (luas-10) % 360;
             marte = ((marte-10) % 1080);
-
+            ceres = ((ceres-10) % 2880);
+            
             glutPostRedisplay();
 
             break;
