@@ -37,9 +37,17 @@ gcc casa3d.c -o casa3d.out -lglut -lGL
 ## Projeto Catavento
 Para executar o **projeto Catavento**, utilize o seguinte comando: 
 ```
-gcc flor2catavento.c -o catavento.out -lglut -lGL -lGLU
+gcc flor2catavento.c -o catavento.out -lglut -lGL
 ./catavento.out
 ```
 É possível rotacionar para a direita utilizando a tecla 'd' do teclado utilizando a velocidade normal, para aumentar a velocidade utilizar a tecla 'f', para diminuir a velocidade utilizar a tecla 'g'. 
 
 É possível rotacionar para a esquerda utilizando a tecla 'e' do teclado utilizando a velocidade normal, para aumentar a velocidade utilizar a tecla 'r', para diminuir a velocidade utilizar a tecla 't'. 
+
+## Projeto Sistema Solar 
+Para executar o **projeto Sistema Solar**, utilize o seguinte comando: 
+```
+gcc sistemaSolar.c -o sistemaSolar.out -lglut -lGL -lGLU
+./sistemaSolar.out
+```
+
