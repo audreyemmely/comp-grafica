@@ -51,3 +51,11 @@ gcc sistemaSolar.c -o sistemaSolar.out -lglut -lGL -lGLU
 ./sistemaSolar.out
 ```
 É possível visualizar o movimento de translação dos planetas ao redor do Sol ao pressionar a tecla 'y'.
+
+## Projeto Sistema Solar Iluminado
+Para executar o **projeto Sistema Solar Iluminado**, utilize o seguinte comando: 
+```
+gcc sistemaIluminado.c -o sistemaIluminado.out -lglut -lGL -lGLU
+./sistemaIluminado.out
+```
+É possível visualizar o movimento de translação dos planetas ao redor do Sol ao pressionar a tecla 'y'.
