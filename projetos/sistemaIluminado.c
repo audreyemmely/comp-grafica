@@ -24,11 +24,11 @@ void display(void)
 //  Sol
     glColor3f(1, 1, 0); // Cor amarela
      
-    glPushMatrix();
+    glPushMatrix(); // Armazena as transformações atuais em um pilha interna do OpenGL
     glRotatef((GLfloat) 90, 1, 0, 0); // Rotacionar o sol
     glRotatef((GLfloat) terra, 0, 0, 1); // Rotacionar o sol de acordo com o movimento dos planetas
     glutSolidSphere(1, 20, 16); // Desenha o sol
-    glPopMatrix();
+    glPopMatrix(); // Retira as transformações armazenadas 
 
 //  Mercurio (planeta 1)
     glColor3f(0.0, 1.0, 1.0); //Cor ciano
@@ -116,7 +116,7 @@ void reshape(GLint w, GLint h)
 void keyboard(unsigned char key, int x, int y)
 {
     switch (key) {
-        case 'y': // Move o sistema solar
+        case 'y': // Move o sistema solar, +10 sentido anti-horário, -10 sentido horário
             mercurio = ((mercurio+10) % 360);
             venus = ((venus+10) % 360);
             terra = (terra-10) % 720;
