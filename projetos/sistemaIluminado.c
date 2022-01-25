@@ -140,7 +140,7 @@ void keyboard(unsigned char key, int x, int y)
 int main(int argc, char *argv[])
 {
      
-    glutInit(&argc, argv); 
+    glutInit(&argc, argv); // Inicializa a biblioteca GLUT
      
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(winWidth, winHeight); // Especifica o tamanho em pixels da janela GLUT
