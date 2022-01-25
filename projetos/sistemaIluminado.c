@@ -142,9 +142,10 @@ int main(int argc, char *argv[])
      
     glutInit(&argc, argv); // Inicializa a biblioteca GLUT
      
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH); // Inicia o modo de exibição, GLUT_DOUBLE permite a exibição na janela de buffer duplo
+							     //GLUT_RGB mostra as cores, GLUT_DEPTH permite buffer de profundidade
     glutInitWindowSize(winWidth, winHeight); // Especifica o tamanho em pixels da janela GLUT
-    glutCreateWindow("Sistema Solar Iluminado");
+    glutCreateWindow("Sistema Solar Iluminado"); // Cria a janela
      
     init(); // Nesta função são feitas as inicializações OpenGL que devem ser executadas antes do rendering
      		
