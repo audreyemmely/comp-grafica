@@ -10,10 +10,10 @@ void init(void)
     	glClearColor(0, 0, 0, 0); // Define a cor de fundo da janela de visualização como preta
 	glEnable(GL_DEPTH_TEST); // Habilita o depth-buffering
 	glEnable(GL_LIGHTING); 	// Habilita o uso de iluminação
-	glEnable(GL_COLOR_MATERIAL);
-	glEnable(GL_LIGHT0);
+	glEnable(GL_COLOR_MATERIAL); // Habilita uso das cores
+	glEnable(GL_LIGHT0); // Habilita a luz de número 0
 	glLightf(GL_LIGHT0, GL_LINEAR_ATTENUATION, 0);
-	GLfloat lightPosition[] = { -5, 0, 0, 1};
+	GLfloat lightPosition[] = {-5, 0, 0, 1};
 	glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
 }
  
